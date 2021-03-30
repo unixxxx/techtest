@@ -1,0 +1,97 @@
+<div class="new-transaction">
+    <h1 class="title">Transaction Information</h1>
+    <form [formGroup]="form"></form>
+    <form nz-form [formGroup]="form" (ngSubmit)="submitForm()">
+        <nz-form-item>
+            <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="internalAccountToDebit"
+                >Internal Account To Debit</nz-form-label
+            >
+            <nz-form-control [nzSm]="8" [nzXs]="24" nzErrorTip="The input is required">
+                <nz-select formControlName="internalAccountToDebit" id="internalAccountToDebit">
+                    <nz-option
+                        *ngFor="let account of accounts"
+                        [nzLabel]="account.label"
+                        [nzValue]="account.value"
+                    ></nz-option>
+                </nz-select>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label [nzSm]="4" [nzXs]="24" nzFor="amount" nzRequired>Amount</nz-form-label>
+            <nz-form-control
+                [nzSm]="8"
+                [nzXs]="24"
+                [nzValidateStatus]="form.controls['amount']"
+                nzErrorTip="Amount is required"
+            >
+                <nz-input-group [nzAddOnAfter]="addOnAfterTemplate">
+                    <input formControlName="amount" id="amount" type="number" nz-input />
+                    <ng-template #addOnAfterTemplate>
+                        <nz-select formControlName="currency">
+                            <nz-option
+                                *ngFor="let currency of currencies"
+                                [nzLabel]="currency.label"
+                                [nzValue]="currency.value"
+                            ></nz-option>
+                        </nz-select>
+                    </ng-template>
+                </nz-input-group>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="feePaidByReceiver"
+                >Fee Paid By Receiver</nz-form-label
+            >
+            <nz-form-control [nzSm]="8" [nzXs]="24">
+                <nz-switch formControlName="feePaidByReceiver" id="feePaidByReceiver"></nz-switch>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="destination">Destination</nz-form-label>
+            <nz-form-control [nzSm]="8" [nzXs]="24" nzErrorTip="The input is required">
+                <nz-select formControlName="destination" id="destination">
+                    <nz-option
+                        *ngFor="let destination of destinations"
+                        [nzLabel]="destination.label"
+                        [nzValue]="destination.value"
+                    ></nz-option>
+                </nz-select>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item formArrayName="metadata">
+            <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired>Metadata</nz-form-label>
+            <nz-form-control [nzSm]="8" [nzXs]="24">
+                <div class="metadataContainer" *ngFor="let meta of metadata.controls; let i = index" [formGroupName]="i">
+                    <div nz-row nzGutter="8">
+                        <div nz-col nzSpan="10">
+                            <input nz-input formControlName="key" placeholder="Key #{{ i + 1 }}" />
+                        </div>
+                        <div nz-col nzSpan="10">
+                            <input nz-input formControlName="value" placeholder="Value #{{ i + 1 }}" />
+                        </div>
+                        <div nz-col [nzSpan]="4">
+                            <button
+                                [disabled]="!canDeleteMeta"
+                                class="removeMeta"
+                                nz-button
+                                (click)="removeMetadata(i)"
+                            >
+                                <i nz-icon nzType="delete" nzTheme="outline"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item nz-row nzGutter="8" class="register-area">
+            <nz-form-control class="cancel" [nzSpan]="2" [nzOffset]="6">
+                <button nz-button nzType="default" (click)="clearForm($event)">Cancel</button>
+            </nz-form-control>
+            <nz-form-control [nzSpan]="4">
+                <button class="submit" nz-button nzType="primary" [disabled]="!form.valid">
+                    Create Transaction
+                </button>
+            </nz-form-control>
+        </nz-form-item>
+    </form>
+</div>

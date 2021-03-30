@@ -1,0 +1,120 @@
+# This worflow is triggered each time a PR is submitted to master or releases :
+#   - to make sure the coding conventions are respected
+#   - no tests break
+
+name: Taurus Template CI On pull Request
+
+on:
+    pull_request:
+        branches:
+            - master
+
+jobs:
+    #########################################################################################################################
+    #                                           ANALYSE CODE
+    #########################################################################################################################
+
+    analyse-code:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Check out Git repository
+              uses: actions/checkout@v2
+
+            - name: Install Librairies for Javascript
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 13.10.0
+              env:
+                  RUNNER_TEMP: /tmp
+
+            - name: Fix problem with ec-key
+              run: yarn config set ignore-engines true
+            - name: Install project dependencies
+              run: yarn
+            - name: Static code analysis
+              run: yarn lint
+
+    #########################################################################################################################
+    #                                           TEST CODE
+    #########################################################################################################################
+
+    test-code:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Check out Git repository
+              uses: actions/checkout@v2
+
+            - name: Install Librairies for Javascript
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 13.10.0
+              env:
+                  RUNNER_TEMP: /tmp
+
+            - name: Fix problem with ec-key
+              run: yarn config set ignore-engines true
+            - name: Install project dependencies
+              run: yarn
+            - name: Run tests
+              run: yarn test-ci
+
+    #########################################################################################################################
+    #                                           CHECK LICENSES
+    #########################################################################################################################
+
+    check-licenses:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Check out Git repository
+              uses: actions/checkout@v2
+
+            - name: Install Librairies for Javascript
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 13.10.0
+              env:
+                  RUNNER_TEMP: /tmp
+
+            - name: Fix problem with ec-key
+              run: yarn config set ignore-engines true
+
+            - name: Install license checker
+              run: npm install -g license-checker && npm install yui-lint
+
+            - name: Check Licenses
+              run: sh scripts/licenses/check.sh
+
+    #########################################################################################################################
+    #                                           TEST BUILD
+    #########################################################################################################################
+
+    test-build:
+        runs-on: ubuntu-latest
+
+        needs: [analyse-code, test-code, check-licenses]
+
+        steps:
+            - name: Check out Git repository
+              uses: actions/checkout@v2
+
+            - name: Install librairies for Linux
+              run: sudo apt-get install fakeroot rpm
+
+            - name: Install Librairies for Javascript
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 13.10.0
+              env:
+                  RUNNER_TEMP: /tmp
+
+            - name: Fix problem with ec-key
+              run: yarn config set ignore-engines true
+
+            - name: Install project dependencies
+              run: yarn install
+
+            - name: Test Building app
+              run: ./build-setup/build-web.sh

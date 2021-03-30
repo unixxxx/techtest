@@ -1,0 +1,93 @@
+# This worflow is triggered each time a pr is merged into master or releases :
+#   - create builds to send to s3 to download later to sign or to be picked up by another pipeline for automatic signing
+
+name: Taurus TRADE CI for Building
+
+on:
+    push:
+        branches:
+            - master
+            - releases_**
+        paths-ignore: # Don't trigger on files that are updated by the CI
+            - package.json
+            - package-lock.json
+
+jobs:
+    #########################################################################################################################
+    #                                           AUTOMATIC VERSION BUMP
+    #########################################################################################################################
+
+    auto-version-bump:
+        runs-on: ubuntu-latest
+
+        steps:
+            # Always use v2 to be able to push to protected branches
+            - name: Check out Git repository
+              uses: actions/checkout@v2
+              with:
+                  persist-credentials: false
+            - name: Upgrade NPM Version
+              run: |
+                  git config --local user.email "action@github.com"
+                  git config --local user.name "GitHub Action"
+                  npm version patch -m "Upgrade to v%s"
+            - name: Get Branch Name
+              shell: bash
+              run: echo "BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/} | sed 's/\//_/g')" >> $GITHUB_ENV
+            - name: Push Upgrade to Branch
+              uses: ad-m/github-push-action@master
+              with:
+                  branch: ${{ env.BRANCH_NAME }}
+                  github_token: ${{ secrets.ADMINTOKEN }}
+
+    #########################################################################################################################
+    #                                           BUILD FOR WEB
+    #########################################################################################################################
+
+    build-web:
+        runs-on: ubuntu-latest
+
+        needs: [auto-version-bump]
+
+        steps:
+            - name: Check out Git repository
+              uses: actions/checkout@v2
+
+            - name: Install librairies for Linux
+              run: sudo apt-get install fakeroot rpm
+
+            - name: Install Librairies for Javascript
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 13.10.0
+              env:
+                  RUNNER_TEMP: /tmp
+
+            - name: Fix problem with ec-key
+              run: yarn config set ignore-engines true
+
+            - name: Get Branch Name and Version
+              shell: bash
+              run: |
+                  echo "BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/} | sed 's/\//_/g')" >> $GITHUB_ENV
+                  git pull origin ${{ env.BRANCH_NAME }}
+                  echo "PACKAGE_VERSION=$(echo $(grep -m1 version package.json | awk -F: '{ print $2 }' | sed 's/[", ]//g'))" >> $GITHUB_ENV
+
+            - name: Install project dependencies
+              run: yarn install
+
+            - name: Build app for Web
+              run: ./build-setup/build-web.sh
+
+            # uncomment below once cloned
+            # - name: Configure AWS Credentials
+            #   uses: aws-actions/configure-aws-credentials@v1
+            #   with:
+            #       aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            #       aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            #       aws-region: "eu-central-1"
+
+            # - name: Deploy Web binaries to S3 bucket
+            #   run: >
+            #       aws s3 cp ./out/tg-<NAME_PROJECT>-gui-client-web-${{  env.PACKAGE_VERSION  }}.zip
+            #       s3://${{ secrets.AWS_S3_BUCKET }}/taurusgroup/tg-<NAME_PROJECT>-gui/v${{  env.PACKAGE_VERSION  }}/web/tg-<NAME_PROJECT>-gui-client-web-v${{  env.PACKAGE_VERSION  }}.zip

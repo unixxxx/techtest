@@ -1,0 +1,48 @@
+<nz-table class="table" #basicTable [nzPageSize]="10" [nzData]="transactions$ | async">
+    <thead>
+        <tr>
+            <th nzCustomFilter>
+                ID
+                <nz-filter-trigger [(nzVisible)]="idSearchVisible" [nzActive]="true" [nzDropdownMenu]="idFilterTemplate">
+                    <i nz-icon nzType="search"></i>
+                </nz-filter-trigger>
+            </th>
+            <th>
+                Date
+                <nz-filter-trigger [(nzVisible)]="dateSearchVisible" [nzDropdownMenu]="datesFilterTemplate">
+                    <i nz-icon nzType="search"></i>
+                </nz-filter-trigger>
+            </th>
+            <th>Currency</th>
+            <th>Amount</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of basicTable.data">
+            <td>{{ data.id }}</td>
+            <td>{{ data.date | date: "yyyy-MM-dd HH:mm:ss" }}</td>
+            <td>{{ data.currency }}</td>
+            <td>{{ data.amount }}</td>
+            <td>
+                <button nz-button (click)="removeTransaction(data.id)">
+                    <i nz-icon nzType="delete" nzTheme="outline"></i>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</nz-table>
+
+<nz-dropdown-menu #idFilterTemplate="nzDropdownMenu">
+    <div class="ant-table-filter-dropdown">
+        <div class="search-box">
+            <input type="text" nz-input placeholder="Search By Id" [(ngModel)]="idFilter" (ngModelChange)="onIdFilter()" />
+        </div>
+    </div>
+</nz-dropdown-menu>
+
+<nz-dropdown-menu #datesFilterTemplate="nzDropdownMenu">
+    <div class="ant-table-filter-dropdown">
+        <nz-range-picker [(ngModel)]="datesFilter" (ngModelChange)="onDatesFilter()"></nz-range-picker>
+    </div>
+</nz-dropdown-menu>

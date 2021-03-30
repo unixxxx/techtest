@@ -1,0 +1,386 @@
+{
+  "@angular/animations@10.0.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/animations",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/animations/README.md"
+  },
+  "@angular/cdk@10.2.7": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/components",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/cdk",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/cdk/LICENSE"
+  },
+  "@angular/common@10.0.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/common",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/common/README.md"
+  },
+  "@angular/compiler@10.0.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/compiler",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/compiler/README.md"
+  },
+  "@angular/core@10.0.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/core",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/core/README.md"
+  },
+  "@angular/core@10.2.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/schematics/node_modules/@angular/core",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/schematics/node_modules/@angular/core/README.md"
+  },
+  "@angular/forms@10.0.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/forms",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/forms/README.md"
+  },
+  "@angular/platform-browser-dynamic@10.0.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/platform-browser-dynamic",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/platform-browser-dynamic/README.md"
+  },
+  "@angular/platform-browser@10.0.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/platform-browser",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/platform-browser/README.md"
+  },
+  "@angular/router@10.0.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/router",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/router/README.md"
+  },
+  "@ant-design/colors@3.2.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ant-design/ant-design-colors",
+    "publisher": "afc163",
+    "email": "afc163@gmail.com",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ant-design/colors",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ant-design/colors/LICENSE"
+  },
+  "@ant-design/icons-angular@10.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ant-design/ant-design-icons/tree/master/packages/icons-angular",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ant-design/icons-angular",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ant-design/icons-angular/README.md"
+  },
+  "@auth0/angular-jwt@5.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/auth0/angular2-jwt",
+    "publisher": "Sam Bellen",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@auth0/angular-jwt",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@auth0/angular-jwt/LICENSE"
+  },
+  "@ngrx/component@10.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ngrx/platform",
+    "publisher": "NgRx",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/component",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/component/README.md"
+  },
+  "@ngrx/data@10.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ngrx/platform",
+    "publisher": "NgRx",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/data",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/data/README.md"
+  },
+  "@ngrx/effects@10.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ngrx/platform",
+    "publisher": "NgRx",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/effects",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/effects/README.md"
+  },
+  "@ngrx/entity@10.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ngrx/platform",
+    "publisher": "NgRx",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/entity",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/entity/README.md"
+  },
+  "@ngrx/router-store@10.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ngrx/platform",
+    "publisher": "NgRx",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/router-store",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/router-store/README.md"
+  },
+  "@ngrx/schematics@10.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ngrx/platform",
+    "publisher": "Brandon Roberts",
+    "email": "robertsbt@gmail.com",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/schematics"
+  },
+  "@ngrx/store-devtools@10.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ngrx/platform",
+    "publisher": "NgRx",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/store-devtools",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/store-devtools/README.md"
+  },
+  "@ngrx/store@10.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ngrx/platform",
+    "publisher": "NgRx",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/store",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@ngrx/store/README.md"
+  },
+  "bignumber.js@9.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/MikeMcl/bignumber.js",
+    "publisher": "Michael Mclaughlin",
+    "email": "M8ch88l@gmail.com",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/bignumber.js",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/bignumber.js/LICENCE.md"
+  },
+  "d@1.0.1": {
+    "licenses": "ISC",
+    "repository": "https://github.com/medikoo/d",
+    "publisher": "Mariusz Nowak",
+    "email": "medyk@medikoo.com",
+    "url": "http://www.medikoo.com/",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/d",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/d/LICENSE"
+  },
+  "date-fns@2.16.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/date-fns/date-fns",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/date-fns",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/date-fns/LICENSE.md"
+  },
+  "es5-ext@0.10.53": {
+    "licenses": "ISC",
+    "repository": "https://github.com/medikoo/es5-ext",
+    "publisher": "Mariusz Nowak",
+    "email": "medyk@medikoo.com",
+    "url": "http://www.medikoo.com/",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/es5-ext",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/es5-ext/LICENSE"
+  },
+  "es6-iterator@2.0.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/medikoo/es6-iterator",
+    "publisher": "Mariusz Nowak",
+    "email": "medyk@medikoo.com",
+    "url": "http://www.medikoo.com/",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/es6-iterator",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/es6-iterator/LICENSE"
+  },
+  "es6-symbol@3.1.3": {
+    "licenses": "ISC",
+    "repository": "https://github.com/medikoo/es6-symbol",
+    "publisher": "Mariusz Nowak",
+    "email": "medyk@medikoo.com",
+    "url": "http://www.medikoo.com/",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/es6-symbol",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/es6-symbol/LICENSE"
+  },
+  "es6-weak-map@2.0.3": {
+    "licenses": "ISC",
+    "repository": "https://github.com/medikoo/es6-weak-map",
+    "publisher": "Mariusz Nowak",
+    "email": "medyk@medikoo.com",
+    "url": "http://www.medikoo.com/",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/es6-weak-map",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/es6-weak-map/LICENSE"
+  },
+  "event-emitter@0.3.5": {
+    "licenses": "MIT",
+    "repository": "https://github.com/medikoo/event-emitter",
+    "publisher": "Mariusz Nowak",
+    "email": "medyk@medikoo.com",
+    "url": "http://www.medikoo.com/",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/event-emitter",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/event-emitter/LICENSE"
+  },
+  "ext@1.4.0": {
+    "licenses": "ISC",
+    "repository": "https://github.com/medikoo/es5-ext/tree/ext",
+    "publisher": "Mariusz Nowak",
+    "email": "medyk@medikoo.com",
+    "url": "http://www.medikoo.com/",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/ext",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/ext/LICENSE"
+  },
+  "is-promise@2.2.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/then/is-promise",
+    "publisher": "ForbesLindesay",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/is-promise",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/is-promise/LICENSE"
+  },
+  "lru-queue@0.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/medikoo/lru-queue",
+    "publisher": "Mariusz Nowak",
+    "email": "medyk@medikoo.com",
+    "url": "http://www.medikoo.com/",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/lru-queue",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/lru-queue/LICENCE"
+  },
+  "memoizee@0.4.14": {
+    "licenses": "ISC",
+    "repository": "https://github.com/medikoo/memoizee",
+    "publisher": "Mariusz Nowak",
+    "email": "medikoo@medikoo.com",
+    "url": "http://www.medikoo.com/",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/memoizee",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/memoizee/LICENSE"
+  },
+  "moment@2.29.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/moment/moment",
+    "publisher": "Iskren Ivov Chernev",
+    "email": "iskren.chernev@gmail.com",
+    "url": "https://github.com/ichernev",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/moment",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/moment/LICENSE"
+  },
+  "next-tick@1.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/medikoo/next-tick",
+    "publisher": "Mariusz Nowak",
+    "email": "medyk@medikoo.com",
+    "url": "http://www.medikoo.com/",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/es5-ext/node_modules/next-tick",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/es5-ext/node_modules/next-tick/LICENSE"
+  },
+  "next-tick@1.1.0": {
+    "licenses": "ISC",
+    "repository": "https://github.com/medikoo/next-tick",
+    "publisher": "Mariusz Nowak",
+    "email": "medyk@medikoo.com",
+    "url": "http://www.medikoo.com/",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/next-tick",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/next-tick/LICENSE"
+  },
+  "ng-zorro-antd@10.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NG-ZORRO/ng-zorro-antd",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/ng-zorro-antd",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/ng-zorro-antd/README.md"
+  },
+  "ngx-webstorage@6.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/PillowPillow/ng2-webstorage",
+    "publisher": "Nicolas Gaignoux",
+    "email": "https://github.com/PillowPillow",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/ngx-webstorage",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/ngx-webstorage/README.md"
+  },
+  "parse5@5.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/inikulin/parse5",
+    "publisher": "Ivan Nikulin",
+    "email": "ifaaan@gmail.com",
+    "url": "https://github.com/inikulin",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/cdk/node_modules/parse5",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/@angular/cdk/node_modules/parse5/LICENSE"
+  },
+  "resize-observer-polyfill@1.5.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/que-etc/resize-observer-polyfill",
+    "publisher": "Denis Rul",
+    "email": "que.etc@gmail.com",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/resize-observer-polyfill",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/resize-observer-polyfill/LICENSE"
+  },
+  "rxjs@6.6.3": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/reactivex/rxjs",
+    "publisher": "Ben Lesh",
+    "email": "ben@benlesh.com",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/rxjs",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/rxjs/LICENSE.txt"
+  },
+  "subsink@1.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/wardbell/subsink",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/subsink",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/subsink/LICENSE"
+  },
+  "tg-trade-gui-backoffice@0.0.0": {
+    "licenses": "BSD*",
+    "publisher": "Nicolas Ducruet",
+    "email": "nicolas.ducruet@taurusgroup.ch",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/LICENSE"
+  },
+  "timers-ext@0.1.7": {
+    "licenses": "ISC",
+    "repository": "https://github.com/medikoo/timers-ext",
+    "publisher": "Mariusz Nowak",
+    "email": "medyk@medikoo.com",
+    "url": "http://www.medikoo.com/",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/timers-ext",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/timers-ext/LICENSE"
+  },
+  "tinycolor2@1.4.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/bgrins/TinyColor",
+    "publisher": "Brian Grinstead",
+    "email": "briangrinstead@gmail.com",
+    "url": "http://briangrinstead.com",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/tinycolor2",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/tinycolor2/LICENSE"
+  },
+  "tslib@1.14.1": {
+    "licenses": "0BSD",
+    "repository": "https://github.com/Microsoft/tslib",
+    "publisher": "Microsoft Corp.",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/rxjs/node_modules/tslib",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/rxjs/node_modules/tslib/LICENSE.txt"
+  },
+  "tslib@2.0.3": {
+    "licenses": "0BSD",
+    "repository": "https://github.com/Microsoft/tslib",
+    "publisher": "Microsoft Corp.",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/tslib",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/tslib/LICENSE.txt"
+  },
+  "type@1.2.0": {
+    "licenses": "ISC",
+    "repository": "https://github.com/medikoo/type",
+    "publisher": "Mariusz Nowak",
+    "email": "medyk@medikoo.com",
+    "url": "https://www.medikoo.com/",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/type",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/type/LICENSE"
+  },
+  "type@2.1.0": {
+    "licenses": "ISC",
+    "repository": "https://github.com/medikoo/type",
+    "publisher": "Mariusz Nowak",
+    "email": "medyk@medikoo.com",
+    "url": "https://www.medikoo.com/",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/ext/node_modules/type",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/ext/node_modules/type/LICENSE"
+  },
+  "zone.js@0.10.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "Brian Ford",
+    "path": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/zone.js",
+    "licenseFile": "/home/nicoduc/Code/Frontend/tg-trade-gui-backoffice/node_modules/zone.js/LICENSE"
+  }
+}
